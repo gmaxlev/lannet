@@ -1,0 +1,24 @@
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301] 
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php 
+RewriteRule ^(.*)index.php$ /$1 [R=301,L] 
+
+# WEEK
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">
+	Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# WEEK
+<FilesMatch ".(js|css|swf)$">
+	Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+#убираем лишние слеши
+RewriteCond %{REQUEST_URI} ^(.*?)\/{2,}(.*?)$
+RewriteRule . %1/%2 [L,R=404]
+RewriteCond %{THE_REQUEST} //
+RewriteRule .* /$0 [R=404,L]
