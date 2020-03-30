@@ -9,16 +9,19 @@
     <section class="section">
       <div class="tabs">
         <div class="container">
-          <ul class="tabs__caption">
-            <li class="active">для квартири
-            </li>
-            <li>для бізнесу
-            </li>
-            <li>приватний сектор
-            </li>
-            <li>додаткові послуги
-            </li>
-          </ul>
+            <div class="tabs-wrapper">
+                <ul class="tabs__caption">
+                    <li class="active">для квартири
+                    </li>
+                    <li>для бізнесу
+                    </li>
+                    <li>приватний сектор
+                    </li>
+                    <li>додаткові послуги
+                    </li>
+                </ul>
+                <button class="tabs__caption-button"></button>
+            </div>
         </div>
         <!--ДЛЯ КВАРТИРИ-->
         <div class="tabs__content active"> 

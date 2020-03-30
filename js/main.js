@@ -565,3 +565,25 @@ $(function() {
     return false;
   });
 });
+
+$(document).ready(function() {
+  /* 
+    Випадаюче меню на мобільних
+*/
+
+  $(".tabs__caption-button").on("click", function() {
+    $(this)
+      .siblings(".tabs__caption")
+      .toggleClass("tabs__caption_open");
+  });
+
+  $(".tabs__caption > li").on("click", function() {
+    $(this)
+      .siblings("active")
+      .removeClass("active");
+    $(this).addClass("active");
+    $(this)
+      .closest(".tabs__caption")
+      .toggleClass("tabs__caption_open");
+  });
+});
