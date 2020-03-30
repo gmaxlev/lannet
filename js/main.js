@@ -26,7 +26,7 @@ function showError(error, element) {
 //}, 20000);
 
 /* 
-    Модальные окна
+  Модальные окна
 */
 
 (function() {
@@ -61,7 +61,7 @@ function showError(error, element) {
 })();
 
 /* 
-    Плавная прокрутка
+  Плавная прокрутка
 */
 (function() {
   function scrollTo(id) {
@@ -80,7 +80,7 @@ function showError(error, element) {
 })();
 
 /* 
-    Кнопка "Вверх"
+  Кнопка "Вверх"
 */
 (function() {
   function ifScrollUp() {
@@ -110,7 +110,7 @@ function validForm(data) {
 }
 
 /* 
-    Форма "Замовити дзвінок"
+  Форма "Замовити дзвінок"
 */
 (function() {
   $("#callback_form")
@@ -188,7 +188,7 @@ function validForm(data) {
 })();
 
 /* 
-    Форма "Підключитись"
+  Форма "Підключитись"
 */
 (function() {
   $("#join_form")
@@ -269,7 +269,7 @@ function validForm(data) {
 })();
 
 /* 
-    Форма "Інтернет"
+  Форма "Інтернет"
 */
 (function() {
   $("#internet_form")
@@ -350,7 +350,7 @@ function validForm(data) {
 })();
 
 /* 
-    Форма "ТБ"
+  Форма "ТБ"
 */
 (function() {
   $("#tv_form")
@@ -431,7 +431,7 @@ function validForm(data) {
 })();
 
 /* 
-    Форма "Резюме"
+  Форма "Резюме"
 */
 (function() {
   $("#job_form")
@@ -512,7 +512,7 @@ function validForm(data) {
 })();
 
 /* 
-    Поля ввода для номеров телефона
+  Поля ввода для номеров телефона
 */
 (function() {
   $(".phone-input").mask("+38 (000) 000 00 00", {
